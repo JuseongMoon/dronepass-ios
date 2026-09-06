@@ -1,0 +1,20 @@
+{
+  "documentId": "3C4D5E6F-7A8B-4C9D-A0E1-F2A3B4C5D6E7",
+  "fields": {
+    "id": "3C4D5E6F-7A8B-4C9D-A0E1-F2A3B4C5D6E7",
+    "title": "행사장 다각형 구역",
+    "shapeType": "polygon",
+    "baseCoordinate": { "latitude": 37.511111, "longitude": 127.011111 },
+    "polygonCoordinates": [
+      { "latitude": 37.511111, "longitude": 127.011111 },
+      { "latitude": 37.512222, "longitude": 127.013333 },
+      { "latitude": 37.509999, "longitude": 127.014444 }
+    ],
+    "memo": "",
+    "address": "서울특별시 송파구",
+    "createdAt": { "_seconds": 1782864000, "_nanoseconds": 0 },
+    "flightStartDate": { "_seconds": 1782900000, "_nanoseconds": 0 },
+    "color": "#34C759",
+    "updatedAt": { "_seconds": 1782907200, "_nanoseconds": 0 }
+  }
+}

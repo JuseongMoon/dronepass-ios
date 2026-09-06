@@ -1,0 +1,20 @@
+{
+  "documentId": "4D5E6F7A-8B9C-4D0E-B1F2-A3B4C5D6E7F8",
+  "fields": {
+    "id": "4D5E6F7A-8B9C-4D0E-B1F2-A3B4C5D6E7F8",
+    "title": "송전선 점검 경로",
+    "shapeType": "polyline",
+    "baseCoordinate": { "latitude": 36.351234, "longitude": 127.384567 },
+    "polylineCoordinates": [
+      { "latitude": 36.351234, "longitude": 127.384567 },
+      { "latitude": 36.353456, "longitude": 127.386789 },
+      { "latitude": 36.355678, "longitude": 127.389012 }
+    ],
+    "memo": "구간 A-B",
+    "address": "",
+    "createdAt": { "_seconds": 1782864000, "_nanoseconds": 0 },
+    "flightStartDate": { "_seconds": 1782900000, "_nanoseconds": 0 },
+    "color": "#FF9500",
+    "updatedAt": { "_seconds": 1782907200, "_nanoseconds": 0 }
+  }
+}

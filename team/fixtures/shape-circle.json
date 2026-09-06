@@ -1,0 +1,19 @@
+{
+  "documentId": "1A2B3C4D-5E6F-4A7B-8C9D-0E1F2A3B4C5D",
+  "fields": {
+    "id": "1A2B3C4D-5E6F-4A7B-8C9D-0E1F2A3B4C5D",
+    "title": "한강 드론 비행구역",
+    "shapeType": "circle",
+    "baseCoordinate": { "latitude": 37.541234, "longitude": 126.986123 },
+    "memo": "비행 승인 완료",
+    "address": "서울특별시 용산구",
+    "createdAt": { "_seconds": 1782864000, "_nanoseconds": 0 },
+    "flightStartDate": { "_seconds": 1782900000, "_nanoseconds": 0 },
+    "flightEndDate": { "_seconds": 1785456000, "_nanoseconds": 0 },
+    "color": "#007AFF",
+    "updatedAt": { "_seconds": 1782907200, "_nanoseconds": 123000000 },
+    "radius": 150.5,
+    "height": 120.5,
+    "droneId": "DRONE-001"
+  }
+}

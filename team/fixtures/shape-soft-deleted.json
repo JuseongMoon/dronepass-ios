@@ -1,0 +1,17 @@
+{
+  "documentId": "5E6F7A8B-9C0D-4E1F-82A3-B4C5D6E7F809",
+  "fields": {
+    "id": "5E6F7A8B-9C0D-4E1F-82A3-B4C5D6E7F809",
+    "title": "삭제된 구역",
+    "shapeType": "circle",
+    "baseCoordinate": { "latitude": 35.158765, "longitude": 129.160123 },
+    "radius": 80,
+    "memo": "",
+    "address": "",
+    "createdAt": { "_seconds": 1782864000, "_nanoseconds": 0 },
+    "flightStartDate": { "_seconds": 1782900000, "_nanoseconds": 0 },
+    "color": "#8E8E93",
+    "deletedAt": { "_seconds": 1782950400, "_nanoseconds": 0 },
+    "updatedAt": { "_seconds": 1782950400, "_nanoseconds": 0 }
+  }
+}

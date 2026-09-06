@@ -1,0 +1,13 @@
+{
+  "documentId": "7A8B9C0D-1E2F-4A3B-84C5-D6E7F8091234",
+  "fields": {
+    "id": "7A8B9C0D-1E2F-4A3B-84C5-D6E7F8091234",
+    "title": "구버전 iOS 도형",
+    "shapeType": "Circle",
+    "baseCoordinate": { "latitude": 33.499876, "longitude": 126.531234 },
+    "radius": 100.0,
+    "startedAt": { "_seconds": 1750000000, "_nanoseconds": 0 },
+    "expireDate": { "_seconds": 1755000000, "_nanoseconds": 0 },
+    "color": "#AF52DE"
+  }
+}

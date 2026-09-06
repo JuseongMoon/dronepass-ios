@@ -1,0 +1,1212 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		06A603BC5A150B005620D169 /* SketchCanvasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49C7281E679BD67D6236E867 /* SketchCanvasView.swift */; };
+		630384C92E02B391007684D1 /* NaverGeocodingModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630384C82E02B391007684D1 /* NaverGeocodingModels.swift */; };
+		630384CB2E02C716007684D1 /* CoordinateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 630384CA2E02C716007684D1 /* CoordinateView.swift */; };
+		630726662FD586FA000C9608 /* GoogleSignIn in Frameworks */ = {isa = PBXBuildFile; productRef = 630726652FD586FA000C9608 /* GoogleSignIn */; };
+		630726682FD586FA000C9608 /* GoogleSignInSwift in Frameworks */ = {isa = PBXBuildFile; productRef = 630726672FD586FA000C9608 /* GoogleSignInSwift */; };
+		631894412E31021100BD7856 /* FetchWebDocuments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631894402E3101FC00BD7856 /* FetchWebDocuments.swift */; };
+		631894502E3102FC00BD7856 /* MarkdownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 631894512E31030100BD7856 /* MarkdownView.swift */; };
+		631AB35B2DD389FC005AA749 /* NMapsMap in Frameworks */ = {isa = PBXBuildFile; productRef = 631AB35A2DD389FC005AA749 /* NMapsMap */; };
+		632D56F02E05B0B90029ADE5 /* PatchNotesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D56EF2E05B0B90029ADE5 /* PatchNotesView.swift */; };
+		632D56F42E05C23D0029ADE5 /* AppInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632D56F32E05C23D0029ADE5 /* AppInfoView.swift */; };
+		6333963A2E8E9010005C4694 /* DroneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633396392E8E900A005C4694 /* DroneDetailView.swift */; };
+		6333963C2E8E9167005C4694 /* DroneEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333963B2E8E9158005C4694 /* DroneEditView.swift */; };
+		6333963E2E8EBF6C005C4694 /* KeychainHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6333963D2E8EBF6C005C4694 /* KeychainHelper.swift */; };
+		6337C4CF2DF98ECA00089659 /* ShapeDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337C4CE2DF98ECA00089659 /* ShapeDetailView.swift */; };
+		6337C4D12DF98F4E00089659 /* ShapeEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6337C4D02DF98F4E00089659 /* ShapeEditView.swift */; };
+		633F13AA2DF8340400BBDD38 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F13A92DF8340400BBDD38 /* MainView.swift */; };
+		633F13C82DF842F300BBDD38 /* MapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F13C62DF842F300BBDD38 /* MapViewModel.swift */; };
+		633F13CB2DF885DB00BBDD38 /* MainTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F13CA2DF885DB00BBDD38 /* MainTabView.swift */; };
+		633F13CD2DF888CD00BBDD38 /* DronePassApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F13CC2DF888C700BBDD38 /* DronePassApp.swift */; };
+		633F13CF2DF8941600BBDD38 /* SettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F13CE2DF8941600BBDD38 /* SettingView.swift */; };
+		633F13D12DF89AF500BBDD38 /* ColorPickerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 633F13D02DF89AF500BBDD38 /* ColorPickerView.swift */; };
+		634E3FB62E2E760300C60E43 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 634E3FB52E2E760300C60E43 /* GoogleService-Info.plist */; };
+		634E3FB92E2E7E5600C60E43 /* FirebaseAnalytics in Frameworks */ = {isa = PBXBuildFile; productRef = 634E3FB82E2E7E5600C60E43 /* FirebaseAnalytics */; };
+		634E3FBB2E2E7E5600C60E43 /* FirebaseAuth in Frameworks */ = {isa = PBXBuildFile; productRef = 634E3FBA2E2E7E5600C60E43 /* FirebaseAuth */; };
+		634E3FBD2E2E7E5600C60E43 /* FirebaseFirestore in Frameworks */ = {isa = PBXBuildFile; productRef = 634E3FBC2E2E7E5600C60E43 /* FirebaseFirestore */; };
+		634E3FBF2E2E7E5600C60E43 /* FirebaseStorage in Frameworks */ = {isa = PBXBuildFile; productRef = 634E3FBE2E2E7E5600C60E43 /* FirebaseStorage */; };
+		634E3FC22E2E96D000C60E43 /* AppleLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634E3FC12E2E96C000C60E43 /* AppleLoginManager.swift */; };
+		634F24F72EAA99C40001A84F /* VWorldModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F24F62EAA99C40001A84F /* VWorldModels.swift */; };
+		634F24F82EAA99C40001A84F /* FlightZoneOverlayManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F24F32EAA99C40001A84F /* FlightZoneOverlayManager.swift */; };
+		634F24F92EAA99C40001A84F /* FlightZoneCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F24F12EAA99C40001A84F /* FlightZoneCalculator.swift */; };
+		634F24FA2EAA99C40001A84F /* VWorldAPIManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F24F42EAA99C40001A84F /* VWorldAPIManager.swift */; };
+		634F24FC2EAA99C40001A84F /* VWorldConstants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 634F24F52EAA99C40001A84F /* VWorldConstants.swift */; };
+		635719732EB1E5D900BEA051 /* FlightZoneLayerSelector.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635719712EB1E5D900BEA051 /* FlightZoneLayerSelector.swift */; };
+		635719742EB1E5D900BEA051 /* VWorldZoneDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 635719722EB1E5D900BEA051 /* VWorldZoneDetailView.swift */; };
+		6362E56A2E2F8FF400402B39 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E5692E2F8FF400402B39 /* ProfileView.swift */; };
+		6362E56E2E2FD2B600402B39 /* CoordinateViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E56D2E2FD2B100402B39 /* CoordinateViewModel.swift */; };
+		6362E5702E2FD7CD00402B39 /* SearchAddressViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E56F2E2FD7C400402B39 /* SearchAddressViewModel.swift */; };
+		6362E5722E2FD8D000402B39 /* ShapeEditViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6362E5712E2FD8C800402B39 /* ShapeEditViewModel.swift */; };
+		637944762EB9BF23007D39F4 /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = 637944752EB9BF23007D39F4 /* Localizable.xcstrings */; };
+		637944772EB9BF23007D39F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 637944732EB9BF23007D39F4 /* InfoPlist.strings */; };
+		637944782EB9BF23007D39F4 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 637944702EB9BF23007D39F4 /* InfoPlist.strings */; };
+		6383D99D2E0298C60033550D /* SearchAddressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6383D99C2E0298C60033550D /* SearchAddressView.swift */; };
+		6387ADA32E30D4C50049A2BA /* ShapeRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387ADA12E30D4C50049A2BA /* ShapeRepository.swift */; };
+		6387ADA52E30D4C50049A2BA /* ShapeStoreProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6387ADA22E30D4C50049A2BA /* ShapeStoreProtocol.swift */; };
+		6393AC9D2E38C7D700F3FEED /* ShapeSortingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6393AC9C2E38C7B500F3FEED /* ShapeSortingManager.swift */; };
+		63970D3F2DE9C93400E11238 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 63970D302DE9C93400E11238 /* Assets.xcassets */; };
+		63970D462DE9C93400E11238 /* ShapeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D222DE9C93400E11238 /* ShapeModel.swift */; };
+		63970D482DE9C93400E11238 /* LocationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D1F2DE9C93400E11238 /* LocationManager.swift */; };
+		63970D492DE9C93400E11238 /* ColorManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D1D2DE9C93400E11238 /* ColorManager.swift */; };
+		63970D542DE9C93400E11238 /* DateFormatter+Korean.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D0F2DE9C93400E11238 /* DateFormatter+Korean.swift */; };
+		63970D582DE9C93400E11238 /* AppInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D2F2DE9C93400E11238 /* AppInfo.swift */; };
+		63970D5B2DE9C93400E11238 /* CoordinateManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D1E2DE9C93400E11238 /* CoordinateManager.swift */; };
+		63970D5D2DE9C93400E11238 /* SettingManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D242DE9C93400E11238 /* SettingManager.swift */; };
+		63970D5E2DE9C93400E11238 /* NaverGeocodingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D102DE9C93400E11238 /* NaverGeocodingService.swift */; };
+		63970D612DE9C93400E11238 /* ShapeUserDefaultsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D252DE9C93400E11238 /* ShapeUserDefaultsStore.swift */; };
+		63970D682DE9C93400E11238 /* ShapeFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D1A2DE9C93400E11238 /* ShapeFileStore.swift */; };
+		63970D692DE9C93400E11238 /* ShapeSelectionCoordinator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D112DE9C93400E11238 /* ShapeSelectionCoordinator.swift */; };
+		63970D6A2DE9C93400E11238 /* NotiName.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63970D212DE9C93400E11238 /* NotiName.swift */; };
+		63A9C1702E9BF30F009C437A /* CopyableTextModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9C16E2E9BF30F009C437A /* CopyableTextModifier.swift */; };
+		63A9CA902E9E4EEB009C437A /* ToastMessageModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9CA8F2E9E4EE6009C437A /* ToastMessageModifier.swift */; };
+		63A9CA922E9E5652009C437A /* KPInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9CA912E9E5652009C437A /* KPInfoView.swift */; };
+		63A9CA942E9E72BA009C437A /* WeatherManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9CA932E9E72B6009C437A /* WeatherManager.swift */; };
+		63A9CA962E9E72D4009C437A /* WeatherForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9CA952E9E72D0009C437A /* WeatherForecastView.swift */; };
+		63A9CA982E9E8C69009C437A /* WeatherInfoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63A9CA972E9E8C64009C437A /* WeatherInfoView.swift */; };
+		63AB0F8A2E1D5ADF001F304E /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB0F892E1D5ADF001F304E /* LoginView.swift */; };
+		63AB0F8C2E1D649A001F304E /* PrivacyPolicyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB0F8B2E1D649A001F304E /* PrivacyPolicyView.swift */; };
+		63AB0F8E2E1D64AC001F304E /* TermsOfServiceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB0F8D2E1D64AC001F304E /* TermsOfServiceView.swift */; };
+		63AB0F902E1D64EF001F304E /* LocationTermsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63AB0F8F2E1D64EF001F304E /* LocationTermsView.swift */; };
+		63B754842EA0FFD6002AEBCB /* MainFloatingButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63B754832EA0FFAD002AEBCB /* MainFloatingButtonView.swift */; };
+		63BB7B2A2E3FA5E60009A3B7 /* ShapeFirebaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB7B292E3FA5E60009A3B7 /* ShapeFirebaseStore.swift */; };
+		63BB7B2C2E3FABC50009A3B7 /* RealtimeSyncManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB7B2B2E3FABC50009A3B7 /* RealtimeSyncManager.swift */; };
+		63BB7B2E2E3FBAC50009A3B7 /* ShapeRealtimeObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BB7B2D2E3FBAC50009A3B7 /* ShapeRealtimeObserver.swift */; };
+		63BD52E02E30948B0048B7EB /* NaverMapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD52DE2E30948B0048B7EB /* NaverMapView.swift */; };
+		63BD52E22E3095540048B7EB /* SavedTableListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BD52E12E3095540048B7EB /* SavedTableListView.swift */; };
+		63BFDE042E34E3730044F1BA /* AuthManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDE032E34E3700044F1BA /* AuthManager.swift */; };
+		63BFDE062E34E7FD0044F1BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDE052E34E7FD0044F1BA /* User.swift */; };
+		63BFDE0A2E3618FD0044F1BA /* MigrationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDE092E3618F60044F1BA /* MigrationManager.swift */; };
+		63BFDE0C2E364BCE0044F1BA /* ChangeDetectionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63BFDE0B2E364BCE0044F1BA /* ChangeDetectionManager.swift */; };
+		63C2429B2EC59425007FFD85 /* FirebaseMessaging in Frameworks */ = {isa = PBXBuildFile; productRef = 63C2429A2EC59425007FFD85 /* FirebaseMessaging */; };
+		63C2429D2EC5960B007FFD85 /* PushNotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2429C2EC59609007FFD85 /* PushNotificationManager.swift */; };
+		63C2D7E02E0EC20E006FFF21 /* DateTimeSelectionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C2D7DF2E0EC20E006FFF21 /* DateTimeSelectionView.swift */; };
+		63C805A12DE30E9000F3428B /* Solar in Frameworks */ = {isa = PBXBuildFile; productRef = 63C805A02DE30E9000F3428B /* Solar */; };
+		63C9427B2E8B88E800A27FBB /* DroneModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9427A2E8B88E800A27FBB /* DroneModel.swift */; };
+		63C9427C2E8B88E800A27FBB /* DroneManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C942792E8B88E800A27FBB /* DroneManager.swift */; };
+		63C9427F2E8B892300A27FBB /* DroneFirebaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9427D2E8B892300A27FBB /* DroneFirebaseStore.swift */; };
+		63C942802E8B892300A27FBB /* DroneRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C9427E2E8B892300A27FBB /* DroneRepository.swift */; };
+		63C942822E8B8A0100A27FBB /* DroneListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C942812E8B8A0100A27FBB /* DroneListView.swift */; };
+		63C942852E8E375400A27FBB /* AnalyticsDataGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63C942832E8E375400A27FBB /* AnalyticsDataGenerator.swift */; };
+		63CEF21F2EE7EBAB007ED69B /* SketchSmoothingAlgorithm.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF21E2EE7EBAB007ED69B /* SketchSmoothingAlgorithm.swift */; };
+		63CEF2202EE80000007ED69B /* SketchPointsCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF2212EE80000007ED69B /* SketchPointsCache.swift */; };
+		63CEF2222EE80001007ED69B /* DistanceCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63CEF2232EE80001007ED69B /* DistanceCalculator.swift */; };
+		63D1F39C2E0AB5B700E1E51E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 63D1F39B2E0AB5B700E1E51E /* LaunchScreen.storyboard */; };
+		63F3F6012DD3525A004C546F /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 63F3F5FF2DD35156004C546F /* WebKit.framework */; };
+		63FFAA0100000000000A0002 /* GoogleLoginManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63FFAA0100000000000A0001 /* GoogleLoginManager.swift */; };
+		8B917210305DA4B367230D9C /* SketchModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9742BBC1B0437F576850B6D2 /* SketchModel.swift */; };
+		9B0D89C1DCCF480392D5D2AC /* SketchRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 86CED87D89ABFC30ED444B98 /* SketchRepository.swift */; };
+		A28D174C7B51CAC35761E9ED /* KPIndexManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = B8AE3AC4DEB5CBD3B031BA12 /* KPIndexManager.swift */; };
+		C5EE34748425C12741FB0FE1 /* KPIndexModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE7B513418B3D11F75825DB9 /* KPIndexModel.swift */; };
+		CC0E8C71F0A8789A6B09B6A2 /* SketchFirebaseStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = CEBD4AA7A8CB0E0FFF03D702 /* SketchFirebaseStore.swift */; };
+		D0F27DCD89D9D2B8A5D72B52 /* SketchToolbarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 714F7E2D5A0CCB2D8EF45A85 /* SketchToolbarView.swift */; };
+		DA126B2C82CE2E87FF33FEB7 /* KPForecastView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 12D584C2628FD816B89DAE7C /* KPForecastView.swift */; };
+		E04384E1D9C10F1996221CAB /* SketchManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 30554B847E1355A68C23F249 /* SketchManager.swift */; };
+		F0BB8E5260E6285DD88B4A13 /* SketchFileStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 70383724FDC9C070264E36EB /* SketchFileStore.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		63A1A4BE30432292008BA7EF /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 63C0573A2DD2F6530044CF9B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 63C057412DD2F6530044CF9B;
+			remoteInfo = DronePass;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		12D584C2628FD816B89DAE7C /* KPForecastView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KPForecastView.swift; sourceTree = "<group>"; };
+		30554B847E1355A68C23F249 /* SketchManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SketchManager.swift; sourceTree = "<group>"; };
+		49C7281E679BD67D6236E867 /* SketchCanvasView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SketchCanvasView.swift; sourceTree = "<group>"; };
+		630384C82E02B391007684D1 /* NaverGeocodingModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeocodingModels.swift; sourceTree = "<group>"; };
+		630384CA2E02C716007684D1 /* CoordinateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateView.swift; sourceTree = "<group>"; };
+		631894402E3101FC00BD7856 /* FetchWebDocuments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FetchWebDocuments.swift; sourceTree = "<group>"; };
+		631894512E31030100BD7856 /* MarkdownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MarkdownView.swift; sourceTree = "<group>"; };
+		632D56EF2E05B0B90029ADE5 /* PatchNotesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PatchNotesView.swift; sourceTree = "<group>"; };
+		632D56F32E05C23D0029ADE5 /* AppInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfoView.swift; sourceTree = "<group>"; };
+		633396392E8E900A005C4694 /* DroneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneDetailView.swift; sourceTree = "<group>"; };
+		6333963B2E8E9158005C4694 /* DroneEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneEditView.swift; sourceTree = "<group>"; };
+		6333963D2E8EBF6C005C4694 /* KeychainHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeychainHelper.swift; sourceTree = "<group>"; };
+		6337C4CE2DF98ECA00089659 /* ShapeDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeDetailView.swift; sourceTree = "<group>"; };
+		6337C4D02DF98F4E00089659 /* ShapeEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditView.swift; sourceTree = "<group>"; };
+		633F13A92DF8340400BBDD38 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		633F13C62DF842F300BBDD38 /* MapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewModel.swift; sourceTree = "<group>"; };
+		633F13CA2DF885DB00BBDD38 /* MainTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabView.swift; sourceTree = "<group>"; };
+		633F13CC2DF888C700BBDD38 /* DronePassApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DronePassApp.swift; sourceTree = "<group>"; };
+		633F13CE2DF8941600BBDD38 /* SettingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingView.swift; sourceTree = "<group>"; };
+		633F13D02DF89AF500BBDD38 /* ColorPickerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorPickerView.swift; sourceTree = "<group>"; };
+		634E3FB52E2E760300C60E43 /* GoogleService-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		634E3FC12E2E96C000C60E43 /* AppleLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleLoginManager.swift; sourceTree = "<group>"; };
+		634F24F12EAA99C40001A84F /* FlightZoneCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightZoneCalculator.swift; sourceTree = "<group>"; };
+		634F24F32EAA99C40001A84F /* FlightZoneOverlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightZoneOverlayManager.swift; sourceTree = "<group>"; };
+		634F24F42EAA99C40001A84F /* VWorldAPIManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWorldAPIManager.swift; sourceTree = "<group>"; };
+		634F24F52EAA99C40001A84F /* VWorldConstants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWorldConstants.swift; sourceTree = "<group>"; };
+		634F24F62EAA99C40001A84F /* VWorldModels.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWorldModels.swift; sourceTree = "<group>"; };
+		635719712EB1E5D900BEA051 /* FlightZoneLayerSelector.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightZoneLayerSelector.swift; sourceTree = "<group>"; };
+		635719722EB1E5D900BEA051 /* VWorldZoneDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VWorldZoneDetailView.swift; sourceTree = "<group>"; };
+		635719752EB1F0B700BEA051 /* FlightZoneOverlayManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightZoneOverlayManager.swift; sourceTree = "<group>"; };
+		6362E5692E2F8FF400402B39 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+		6362E56D2E2FD2B100402B39 /* CoordinateViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateViewModel.swift; sourceTree = "<group>"; };
+		6362E56F2E2FD7C400402B39 /* SearchAddressViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressViewModel.swift; sourceTree = "<group>"; };
+		6362E5712E2FD8C800402B39 /* ShapeEditViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeEditViewModel.swift; sourceTree = "<group>"; };
+		6379446F2EB9BF23007D39F4 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = InfoPlist.strings; sourceTree = "<group>"; };
+		637944722EB9BF23007D39F4 /* ko */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ko; path = InfoPlist.strings; sourceTree = "<group>"; };
+		637944752EB9BF23007D39F4 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		6383D99C2E0298C60033550D /* SearchAddressView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchAddressView.swift; sourceTree = "<group>"; };
+		6387ADA12E30D4C50049A2BA /* ShapeRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeRepository.swift; sourceTree = "<group>"; };
+		6387ADA22E30D4C50049A2BA /* ShapeStoreProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeStoreProtocol.swift; sourceTree = "<group>"; };
+		6393AC9C2E38C7B500F3FEED /* ShapeSortingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeSortingManager.swift; sourceTree = "<group>"; };
+		639454C22EDFF970000BD29A /* Debug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Debug.xcconfig; sourceTree = "<group>"; };
+		639454C32EDFF970000BD29A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		639454C42EDFF970000BD29A /* Secrets.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Secrets.xcconfig; sourceTree = "<group>"; };
+		63970D0F2DE9C93400E11238 /* DateFormatter+Korean.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DateFormatter+Korean.swift"; sourceTree = "<group>"; };
+		63970D102DE9C93400E11238 /* NaverGeocodingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverGeocodingService.swift; sourceTree = "<group>"; };
+		63970D112DE9C93400E11238 /* ShapeSelectionCoordinator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeSelectionCoordinator.swift; sourceTree = "<group>"; };
+		63970D1A2DE9C93400E11238 /* ShapeFileStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeFileStore.swift; sourceTree = "<group>"; };
+		63970D1D2DE9C93400E11238 /* ColorManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorManager.swift; sourceTree = "<group>"; };
+		63970D1E2DE9C93400E11238 /* CoordinateManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoordinateManager.swift; sourceTree = "<group>"; };
+		63970D1F2DE9C93400E11238 /* LocationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationManager.swift; sourceTree = "<group>"; };
+		63970D212DE9C93400E11238 /* NotiName.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotiName.swift; sourceTree = "<group>"; };
+		63970D222DE9C93400E11238 /* ShapeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeModel.swift; sourceTree = "<group>"; };
+		63970D242DE9C93400E11238 /* SettingManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingManager.swift; sourceTree = "<group>"; };
+		63970D252DE9C93400E11238 /* ShapeUserDefaultsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeUserDefaultsStore.swift; sourceTree = "<group>"; };
+		63970D2F2DE9C93400E11238 /* AppInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppInfo.swift; sourceTree = "<group>"; };
+		63970D302DE9C93400E11238 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		63970D312DE9C93400E11238 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		63970D6B2DE9CCA400E11238 /* DronePass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DronePass.entitlements; sourceTree = "<group>"; };
+		63A9C16E2E9BF30F009C437A /* CopyableTextModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyableTextModifier.swift; sourceTree = "<group>"; };
+		63A9CA8F2E9E4EE6009C437A /* ToastMessageModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToastMessageModifier.swift; sourceTree = "<group>"; };
+		63A9CA912E9E5652009C437A /* KPInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KPInfoView.swift; sourceTree = "<group>"; };
+		63A9CA932E9E72B6009C437A /* WeatherManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherManager.swift; sourceTree = "<group>"; };
+		63A9CA952E9E72D0009C437A /* WeatherForecastView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherForecastView.swift; sourceTree = "<group>"; };
+		63A9CA972E9E8C64009C437A /* WeatherInfoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WeatherInfoView.swift; sourceTree = "<group>"; };
+		63AB0F892E1D5ADF001F304E /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		63AB0F8B2E1D649A001F304E /* PrivacyPolicyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrivacyPolicyView.swift; sourceTree = "<group>"; };
+		63AB0F8D2E1D64AC001F304E /* TermsOfServiceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TermsOfServiceView.swift; sourceTree = "<group>"; };
+		63AB0F8F2E1D64EF001F304E /* LocationTermsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationTermsView.swift; sourceTree = "<group>"; };
+		63B754832EA0FFAD002AEBCB /* MainFloatingButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainFloatingButtonView.swift; sourceTree = "<group>"; };
+		63BB7B292E3FA5E60009A3B7 /* ShapeFirebaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeFirebaseStore.swift; sourceTree = "<group>"; };
+		63BB7B2B2E3FABC50009A3B7 /* RealtimeSyncManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RealtimeSyncManager.swift; sourceTree = "<group>"; };
+		63BB7B2D2E3FBAC50009A3B7 /* ShapeRealtimeObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShapeRealtimeObserver.swift; sourceTree = "<group>"; };
+		63BD52DE2E30948B0048B7EB /* NaverMapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NaverMapView.swift; sourceTree = "<group>"; };
+		63BD52E12E3095540048B7EB /* SavedTableListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SavedTableListView.swift; sourceTree = "<group>"; };
+		63BFDE032E34E3700044F1BA /* AuthManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthManager.swift; sourceTree = "<group>"; };
+		63BFDE052E34E7FD0044F1BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		63BFDE092E3618F60044F1BA /* MigrationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MigrationManager.swift; sourceTree = "<group>"; };
+		63BFDE0B2E364BCE0044F1BA /* ChangeDetectionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeDetectionManager.swift; sourceTree = "<group>"; };
+		63C057422DD2F6530044CF9B /* DronePass.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DronePass.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		63C2429C2EC59609007FFD85 /* PushNotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushNotificationManager.swift; sourceTree = "<group>"; };
+		63C2D7DF2E0EC20E006FFF21 /* DateTimeSelectionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateTimeSelectionView.swift; sourceTree = "<group>"; };
+		63C942792E8B88E800A27FBB /* DroneManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneManager.swift; sourceTree = "<group>"; };
+		63C9427A2E8B88E800A27FBB /* DroneModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneModel.swift; sourceTree = "<group>"; };
+		63C9427D2E8B892300A27FBB /* DroneFirebaseStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneFirebaseStore.swift; sourceTree = "<group>"; };
+		63C9427E2E8B892300A27FBB /* DroneRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneRepository.swift; sourceTree = "<group>"; };
+		63C942812E8B8A0100A27FBB /* DroneListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroneListView.swift; sourceTree = "<group>"; };
+		63C942832E8E375400A27FBB /* AnalyticsDataGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalyticsDataGenerator.swift; sourceTree = "<group>"; };
+		63CEF21E2EE7EBAB007ED69B /* SketchSmoothingAlgorithm.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchSmoothingAlgorithm.swift; sourceTree = "<group>"; };
+		63CEF2212EE80000007ED69B /* SketchPointsCache.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SketchPointsCache.swift; sourceTree = "<group>"; };
+		63CEF2232EE80001007ED69B /* DistanceCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistanceCalculator.swift; sourceTree = "<group>"; };
+		63D1F39B2E0AB5B700E1E51E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		63DAB0022F00000100000002 /* DronePassTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DronePassTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		63F3F5FF2DD35156004C546F /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
+		63FFAA0100000000000A0001 /* GoogleLoginManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GoogleLoginManager.swift; sourceTree = "<group>"; };
+		70383724FDC9C070264E36EB /* SketchFileStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SketchFileStore.swift; sourceTree = "<group>"; };
+		714F7E2D5A0CCB2D8EF45A85 /* SketchToolbarView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SketchToolbarView.swift; sourceTree = "<group>"; };
+		79E3DEA77730421CAC6015AD /* CopyableTextModifier.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = CopyableTextModifier.swift; sourceTree = "<group>"; };
+		86CED87D89ABFC30ED444B98 /* SketchRepository.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SketchRepository.swift; sourceTree = "<group>"; };
+		9742BBC1B0437F576850B6D2 /* SketchModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SketchModel.swift; sourceTree = "<group>"; };
+		B8AE3AC4DEB5CBD3B031BA12 /* KPIndexManager.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KPIndexManager.swift; sourceTree = "<group>"; };
+		CEBD4AA7A8CB0E0FFF03D702 /* SketchFirebaseStore.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = SketchFirebaseStore.swift; sourceTree = "<group>"; };
+		EE7B513418B3D11F75825DB9 /* KPIndexModel.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; path = KPIndexModel.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFileSystemSynchronizedRootGroup section */
+		63DAB00B2F0000010000000B /* DronePassTests */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = DronePassTests;
+			sourceTree = "<group>";
+		};
+		63DAB00E2F0000010000000E /* team/fixtures */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			path = team/fixtures;
+			sourceTree = "<group>";
+		};
+/* End PBXFileSystemSynchronizedRootGroup section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		63C0573F2DD2F6530044CF9B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63C2429B2EC59425007FFD85 /* FirebaseMessaging in Frameworks */,
+				63C805A12DE30E9000F3428B /* Solar in Frameworks */,
+				634E3FBB2E2E7E5600C60E43 /* FirebaseAuth in Frameworks */,
+				63F3F6012DD3525A004C546F /* WebKit.framework in Frameworks */,
+				634E3FB92E2E7E5600C60E43 /* FirebaseAnalytics in Frameworks */,
+				630726682FD586FA000C9608 /* GoogleSignInSwift in Frameworks */,
+				634E3FBF2E2E7E5600C60E43 /* FirebaseStorage in Frameworks */,
+				631AB35B2DD389FC005AA749 /* NMapsMap in Frameworks */,
+				634E3FBD2E2E7E5600C60E43 /* FirebaseFirestore in Frameworks */,
+				630726662FD586FA000C9608 /* GoogleSignIn in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DAB0042F00000100000004 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		38E6BC870014D72AB6A509C1 /* Sketch */ = {
+			isa = PBXGroup;
+			children = (
+				72DD03228BD5EB6BF532C3C4 /* View */,
+				9742BBC1B0437F576850B6D2 /* SketchModel.swift */,
+				70383724FDC9C070264E36EB /* SketchFileStore.swift */,
+				CEBD4AA7A8CB0E0FFF03D702 /* SketchFirebaseStore.swift */,
+				86CED87D89ABFC30ED444B98 /* SketchRepository.swift */,
+			);
+			path = Sketch;
+			sourceTree = "<group>";
+		};
+		630379682E0A8D4C00F0A84D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				63BFDE052E34E7FD0044F1BA /* User.swift */,
+				633F13C62DF842F300BBDD38 /* MapViewModel.swift */,
+				63970D212DE9C93400E11238 /* NotiName.swift */,
+				EE7B513418B3D11F75825DB9 /* KPIndexModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		630379692E0A8D5E00F0A84D /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				63BD52DE2E30948B0048B7EB /* NaverMapView.swift */,
+				630384C82E02B391007684D1 /* NaverGeocodingModels.swift */,
+				63970D102DE9C93400E11238 /* NaverGeocodingService.swift */,
+				63970D112DE9C93400E11238 /* ShapeSelectionCoordinator.swift */,
+				63970D252DE9C93400E11238 /* ShapeUserDefaultsStore.swift */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		6318943F2E3101E800BD7856 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				631894402E3101FC00BD7856 /* FetchWebDocuments.swift */,
+				631894512E31030100BD7856 /* MarkdownView.swift */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		634E3FC02E2E96AF00C60E43 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				63AB0F892E1D5ADF001F304E /* LoginView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		634E3FC32E2E974600C60E43 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				63970D0F2DE9C93400E11238 /* DateFormatter+Korean.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		634E3FC42E2E975E00C60E43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63A9CA972E9E8C64009C437A /* WeatherInfoView.swift */,
+				63A9CA952E9E72D0009C437A /* WeatherForecastView.swift */,
+				63A9CA912E9E5652009C437A /* KPInfoView.swift */,
+				6333963B2E8E9158005C4694 /* DroneEditView.swift */,
+				633396392E8E900A005C4694 /* DroneDetailView.swift */,
+				63C942812E8B8A0100A27FBB /* DroneListView.swift */,
+				633F13CE2DF8941600BBDD38 /* SettingView.swift */,
+				63C2D7DF2E0EC20E006FFF21 /* DateTimeSelectionView.swift */,
+				632D56F32E05C23D0029ADE5 /* AppInfoView.swift */,
+				632D56EF2E05B0B90029ADE5 /* PatchNotesView.swift */,
+				633F13D02DF89AF500BBDD38 /* ColorPickerView.swift */,
+				6362E5692E2F8FF400402B39 /* ProfileView.swift */,
+				63BD52E32E30B70A0048B7EB /* Terms */,
+				12D584C2628FD816B89DAE7C /* KPForecastView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		634E3FC52E2E976200C60E43 /* Setting */ = {
+			isa = PBXGroup;
+			children = (
+				634E3FC42E2E975E00C60E43 /* View */,
+			);
+			path = Setting;
+			sourceTree = "<group>";
+		};
+		634E3FC62E2E978600C60E43 /* Shape */ = {
+			isa = PBXGroup;
+			children = (
+				63970D222DE9C93400E11238 /* ShapeModel.swift */,
+				63970D1A2DE9C93400E11238 /* ShapeFileStore.swift */,
+				634E3FC82E2E982B00C60E43 /* View */,
+			);
+			path = Shape;
+			sourceTree = "<group>";
+		};
+		634E3FC72E2E979500C60E43 /* Manager */ = {
+			isa = PBXGroup;
+			children = (
+				63CEF21E2EE7EBAB007ED69B /* SketchSmoothingAlgorithm.swift */,
+				63C2429C2EC59609007FFD85 /* PushNotificationManager.swift */,
+				63A9CA932E9E72B6009C437A /* WeatherManager.swift */,
+				6333963D2E8EBF6C005C4694 /* KeychainHelper.swift */,
+				63C942792E8B88E800A27FBB /* DroneManager.swift */,
+				63C9427A2E8B88E800A27FBB /* DroneModel.swift */,
+				63BB7B2D2E3FBAC50009A3B7 /* ShapeRealtimeObserver.swift */,
+				63BB7B2B2E3FABC50009A3B7 /* RealtimeSyncManager.swift */,
+				6393AC9C2E38C7B500F3FEED /* ShapeSortingManager.swift */,
+				63BFDE0B2E364BCE0044F1BA /* ChangeDetectionManager.swift */,
+				63BFDE092E3618F60044F1BA /* MigrationManager.swift */,
+				63BFDE032E34E3700044F1BA /* AuthManager.swift */,
+				63970D242DE9C93400E11238 /* SettingManager.swift */,
+				634E3FC12E2E96C000C60E43 /* AppleLoginManager.swift */,
+				63FFAA0100000000000A0001 /* GoogleLoginManager.swift */,
+				63970D1E2DE9C93400E11238 /* CoordinateManager.swift */,
+				63970D1D2DE9C93400E11238 /* ColorManager.swift */,
+				63970D1F2DE9C93400E11238 /* LocationManager.swift */,
+				B8AE3AC4DEB5CBD3B031BA12 /* KPIndexManager.swift */,
+				30554B847E1355A68C23F249 /* SketchManager.swift */,
+				63CEF2212EE80000007ED69B /* SketchPointsCache.swift */,
+				63CEF2232EE80001007ED69B /* DistanceCalculator.swift */,
+			);
+			path = Manager;
+			sourceTree = "<group>";
+		};
+		634E3FC82E2E982B00C60E43 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63BD52E12E3095540048B7EB /* SavedTableListView.swift */,
+				6337C4CE2DF98ECA00089659 /* ShapeDetailView.swift */,
+				6337C4D02DF98F4E00089659 /* ShapeEditView.swift */,
+				6362E5712E2FD8C800402B39 /* ShapeEditViewModel.swift */,
+				6383D99C2E0298C60033550D /* SearchAddressView.swift */,
+				6362E56F2E2FD7C400402B39 /* SearchAddressViewModel.swift */,
+				630384CA2E02C716007684D1 /* CoordinateView.swift */,
+				6362E56D2E2FD2B100402B39 /* CoordinateViewModel.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		634F24F02EAA7FB80001A84F /* VWorld */ = {
+			isa = PBXGroup;
+			children = (
+				635719752EB1F0B700BEA051 /* FlightZoneOverlayManager.swift */,
+				6357196E2EB1E3E400BEA051 /* View */,
+				634F24F12EAA99C40001A84F /* FlightZoneCalculator.swift */,
+				634F24F32EAA99C40001A84F /* FlightZoneOverlayManager.swift */,
+				634F24F42EAA99C40001A84F /* VWorldAPIManager.swift */,
+				634F24F52EAA99C40001A84F /* VWorldConstants.swift */,
+				634F24F62EAA99C40001A84F /* VWorldModels.swift */,
+			);
+			path = VWorld;
+			sourceTree = "<group>";
+		};
+		6357196E2EB1E3E400BEA051 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				635719712EB1E5D900BEA051 /* FlightZoneLayerSelector.swift */,
+				635719722EB1E5D900BEA051 /* VWorldZoneDetailView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		6379446E2EB9BE88007D39F4 /* Localization */ = {
+			isa = PBXGroup;
+			children = (
+				637944712EB9BF23007D39F4 /* en.lproj */,
+				637944742EB9BF23007D39F4 /* ko.lproj */,
+				637944752EB9BF23007D39F4 /* Localizable.xcstrings */,
+			);
+			path = Localization;
+			sourceTree = "<group>";
+		};
+		637944712EB9BF23007D39F4 /* en.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				637944702EB9BF23007D39F4 /* InfoPlist.strings */,
+			);
+			path = en.lproj;
+			sourceTree = "<group>";
+		};
+		637944742EB9BF23007D39F4 /* ko.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				637944732EB9BF23007D39F4 /* InfoPlist.strings */,
+			);
+			path = ko.lproj;
+			sourceTree = "<group>";
+		};
+		6387ADA62E30D4CF0049A2BA /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				63C9427D2E8B892300A27FBB /* DroneFirebaseStore.swift */,
+				63C9427E2E8B892300A27FBB /* DroneRepository.swift */,
+				63BB7B292E3FA5E60009A3B7 /* ShapeFirebaseStore.swift */,
+				6387ADA12E30D4C50049A2BA /* ShapeRepository.swift */,
+				6387ADA22E30D4C50049A2BA /* ShapeStoreProtocol.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		639454C62EDFF970000BD29A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				639454C22EDFF970000BD29A /* Debug.xcconfig */,
+				639454C32EDFF970000BD29A /* Release.xcconfig */,
+				639454C42EDFF970000BD29A /* Secrets.xcconfig */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		63970D392DE9C93400E11238 /* DronePass */ = {
+			isa = PBXGroup;
+			children = (
+				639454C62EDFF970000BD29A /* Config */,
+				63970D6B2DE9CCA400E11238 /* DronePass.entitlements */,
+				63970D2F2DE9C93400E11238 /* AppInfo.swift */,
+				63D1F39B2E0AB5B700E1E51E /* LaunchScreen.storyboard */,
+				63970D302DE9C93400E11238 /* Assets.xcassets */,
+				63970D312DE9C93400E11238 /* Info.plist */,
+				633F13CC2DF888C700BBDD38 /* DronePassApp.swift */,
+				633F13A92DF8340400BBDD38 /* MainView.swift */,
+				633F13CA2DF885DB00BBDD38 /* MainTabView.swift */,
+				634F24F02EAA7FB80001A84F /* VWorld */,
+				63B754822EA0FFA1002AEBCB /* View */,
+				634E3FC72E2E979500C60E43 /* Manager */,
+				634E3FC02E2E96AF00C60E43 /* Login */,
+				6387ADA62E30D4CF0049A2BA /* Firebase */,
+				63C942842E8E375400A27FBB /* Analytics */,
+				630379692E0A8D5E00F0A84D /* Core */,
+				634E3FC52E2E976200C60E43 /* Setting */,
+				634E3FC62E2E978600C60E43 /* Shape */,
+				630379682E0A8D4C00F0A84D /* Model */,
+				634E3FC32E2E974600C60E43 /* Extension */,
+				6318943F2E3101E800BD7856 /* Web */,
+				63A9C16F2E9BF30F009C437A /* Modifier */,
+				6379446E2EB9BE88007D39F4 /* Localization */,
+				634E3FB52E2E760300C60E43 /* GoogleService-Info.plist */,
+				38E6BC870014D72AB6A509C1 /* Sketch */,
+			);
+			path = DronePass;
+			sourceTree = "<group>";
+		};
+		63A9C16F2E9BF30F009C437A /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				63A9CA8F2E9E4EE6009C437A /* ToastMessageModifier.swift */,
+				63A9C16E2E9BF30F009C437A /* CopyableTextModifier.swift */,
+			);
+			path = Modifier;
+			sourceTree = "<group>";
+		};
+		63B754822EA0FFA1002AEBCB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				63B754832EA0FFAD002AEBCB /* MainFloatingButtonView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		63BD52E32E30B70A0048B7EB /* Terms */ = {
+			isa = PBXGroup;
+			children = (
+				63AB0F8D2E1D64AC001F304E /* TermsOfServiceView.swift */,
+				63AB0F8F2E1D64EF001F304E /* LocationTermsView.swift */,
+				63AB0F8B2E1D649A001F304E /* PrivacyPolicyView.swift */,
+			);
+			path = Terms;
+			sourceTree = "<group>";
+		};
+		63C057392DD2F6530044CF9B = {
+			isa = PBXGroup;
+			children = (
+				63970D392DE9C93400E11238 /* DronePass */,
+				63DAB00B2F0000010000000B /* DronePassTests */,
+				63DAB00E2F0000010000000E /* team/fixtures */,
+				63F3F5FE2DD35156004C546F /* Frameworks */,
+				63C057432DD2F6530044CF9B /* Products */,
+				C44C97038AF0C495B88F44D9 /* Modifier */,
+			);
+			sourceTree = "<group>";
+		};
+		63C057432DD2F6530044CF9B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				63C057422DD2F6530044CF9B /* DronePass.app */,
+				63DAB0022F00000100000002 /* DronePassTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		63C942842E8E375400A27FBB /* Analytics */ = {
+			isa = PBXGroup;
+			children = (
+				63C942832E8E375400A27FBB /* AnalyticsDataGenerator.swift */,
+			);
+			path = Analytics;
+			sourceTree = "<group>";
+		};
+		63F3F5FE2DD35156004C546F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				63F3F5FF2DD35156004C546F /* WebKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		72DD03228BD5EB6BF532C3C4 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				714F7E2D5A0CCB2D8EF45A85 /* SketchToolbarView.swift */,
+				49C7281E679BD67D6236E867 /* SketchCanvasView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		C44C97038AF0C495B88F44D9 /* Modifier */ = {
+			isa = PBXGroup;
+			children = (
+				79E3DEA77730421CAC6015AD /* CopyableTextModifier.swift */,
+			);
+			name = Modifier;
+			path = DronePass/Modifier;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		63C057412DD2F6530044CF9B /* DronePass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63C0576E2DD2F6540044CF9B /* Build configuration list for PBXNativeTarget "DronePass" */;
+			buildPhases = (
+				63C0573E2DD2F6530044CF9B /* Sources */,
+				63C0573F2DD2F6530044CF9B /* Frameworks */,
+				63C057402DD2F6530044CF9B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DronePass;
+			packageProductDependencies = (
+				631AB35A2DD389FC005AA749 /* NMapsMap */,
+				63C805A02DE30E9000F3428B /* Solar */,
+				634E3FB82E2E7E5600C60E43 /* FirebaseAnalytics */,
+				634E3FBA2E2E7E5600C60E43 /* FirebaseAuth */,
+				634E3FBC2E2E7E5600C60E43 /* FirebaseFirestore */,
+				634E3FBE2E2E7E5600C60E43 /* FirebaseStorage */,
+				63C2429A2EC59425007FFD85 /* FirebaseMessaging */,
+				630726652FD586FA000C9608 /* GoogleSignIn */,
+				630726672FD586FA000C9608 /* GoogleSignInSwift */,
+			);
+			productName = MapSketch;
+			productReference = 63C057422DD2F6530044CF9B /* DronePass.app */;
+			productType = "com.apple.product-type.application";
+		};
+		63DAB0012F00000100000001 /* DronePassTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 63DAB00A2F0000010000000A /* Build configuration list for PBXNativeTarget "DronePassTests" */;
+			buildPhases = (
+				63DAB0032F00000100000003 /* Sources */,
+				63DAB0042F00000100000004 /* Frameworks */,
+				63DAB0052F00000100000005 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				63DAB0072F00000100000007 /* PBXTargetDependency */,
+			);
+			fileSystemSynchronizedGroups = (
+				63DAB00B2F0000010000000B /* DronePassTests */,
+				63DAB00E2F0000010000000E /* team/fixtures */,
+			);
+			name = DronePassTests;
+			productName = DronePassTests;
+			productReference = 63DAB0022F00000100000002 /* DronePassTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		63C0573A2DD2F6530044CF9B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1630;
+				LastUpgradeCheck = 2610;
+				TargetAttributes = {
+					63C057412DD2F6530044CF9B = {
+						CreatedOnToolsVersion = 16.3;
+					};
+					63DAB0012F00000100000001 = {
+						TestTargetID = 63C057412DD2F6530044CF9B;
+					};
+				};
+			};
+			buildConfigurationList = 63C0573D2DD2F6530044CF9B /* Build configuration list for PBXProject "DronePass" */;
+			developmentRegion = ko;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				ko,
+				en,
+			);
+			mainGroup = 63C057392DD2F6530044CF9B;
+			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				631AB3592DD389FC005AA749 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */,
+				63C8059F2DE30D1E00F3428B /* XCRemoteSwiftPackageReference "Solar" */,
+				634E3FB72E2E7E5600C60E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */,
+				630726642FD586FA000C9608 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */,
+			);
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 63C057432DD2F6530044CF9B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				63C057412DD2F6530044CF9B /* DronePass */,
+				63DAB0012F00000100000001 /* DronePassTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		63C057402DD2F6530044CF9B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				637944762EB9BF23007D39F4 /* Localizable.xcstrings in Resources */,
+				637944772EB9BF23007D39F4 /* InfoPlist.strings in Resources */,
+				637944782EB9BF23007D39F4 /* InfoPlist.strings in Resources */,
+				63970D3F2DE9C93400E11238 /* Assets.xcassets in Resources */,
+				63D1F39C2E0AB5B700E1E51E /* LaunchScreen.storyboard in Resources */,
+				634E3FB62E2E760300C60E43 /* GoogleService-Info.plist in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DAB0052F00000100000005 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		63C0573E2DD2F6530044CF9B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				63A9C1702E9BF30F009C437A /* CopyableTextModifier.swift in Sources */,
+				63AB0F8E2E1D64AC001F304E /* TermsOfServiceView.swift in Sources */,
+				630384C92E02B391007684D1 /* NaverGeocodingModels.swift in Sources */,
+				6333963A2E8E9010005C4694 /* DroneDetailView.swift in Sources */,
+				6333963C2E8E9167005C4694 /* DroneEditView.swift in Sources */,
+				63A9CA962E9E72D4009C437A /* WeatherForecastView.swift in Sources */,
+				63BFDE0C2E364BCE0044F1BA /* ChangeDetectionManager.swift in Sources */,
+				63C2429D2EC5960B007FFD85 /* PushNotificationManager.swift in Sources */,
+				63BB7B2A2E3FA5E60009A3B7 /* ShapeFirebaseStore.swift in Sources */,
+				633F13C82DF842F300BBDD38 /* MapViewModel.swift in Sources */,
+				6387ADA32E30D4C50049A2BA /* ShapeRepository.swift in Sources */,
+				6387ADA52E30D4C50049A2BA /* ShapeStoreProtocol.swift in Sources */,
+				6362E5702E2FD7CD00402B39 /* SearchAddressViewModel.swift in Sources */,
+				63AB0F8C2E1D649A001F304E /* PrivacyPolicyView.swift in Sources */,
+				63970D462DE9C93400E11238 /* ShapeModel.swift in Sources */,
+				6337C4D12DF98F4E00089659 /* ShapeEditView.swift in Sources */,
+				63C9427B2E8B88E800A27FBB /* DroneModel.swift in Sources */,
+				63C9427C2E8B88E800A27FBB /* DroneManager.swift in Sources */,
+				63C942822E8B8A0100A27FBB /* DroneListView.swift in Sources */,
+				634F24F72EAA99C40001A84F /* VWorldModels.swift in Sources */,
+				634F24F82EAA99C40001A84F /* FlightZoneOverlayManager.swift in Sources */,
+				634F24F92EAA99C40001A84F /* FlightZoneCalculator.swift in Sources */,
+				634F24FA2EAA99C40001A84F /* VWorldAPIManager.swift in Sources */,
+				634F24FC2EAA99C40001A84F /* VWorldConstants.swift in Sources */,
+				63A9CA942E9E72BA009C437A /* WeatherManager.swift in Sources */,
+				63B754842EA0FFD6002AEBCB /* MainFloatingButtonView.swift in Sources */,
+				63970D482DE9C93400E11238 /* LocationManager.swift in Sources */,
+				6362E5722E2FD8D000402B39 /* ShapeEditViewModel.swift in Sources */,
+				633F13CF2DF8941600BBDD38 /* SettingView.swift in Sources */,
+				63970D492DE9C93400E11238 /* ColorManager.swift in Sources */,
+				632D56F02E05B0B90029ADE5 /* PatchNotesView.swift in Sources */,
+				63970D542DE9C93400E11238 /* DateFormatter+Korean.swift in Sources */,
+				6362E56A2E2F8FF400402B39 /* ProfileView.swift in Sources */,
+				6383D99D2E0298C60033550D /* SearchAddressView.swift in Sources */,
+				63970D582DE9C93400E11238 /* AppInfo.swift in Sources */,
+				63C2D7E02E0EC20E006FFF21 /* DateTimeSelectionView.swift in Sources */,
+				6393AC9D2E38C7D700F3FEED /* ShapeSortingManager.swift in Sources */,
+				63970D5B2DE9C93400E11238 /* CoordinateManager.swift in Sources */,
+				63AB0F902E1D64EF001F304E /* LocationTermsView.swift in Sources */,
+				63A9CA902E9E4EEB009C437A /* ToastMessageModifier.swift in Sources */,
+				63BFDE062E34E7FD0044F1BA /* User.swift in Sources */,
+				632D56F42E05C23D0029ADE5 /* AppInfoView.swift in Sources */,
+				63970D5D2DE9C93400E11238 /* SettingManager.swift in Sources */,
+				63AB0F8A2E1D5ADF001F304E /* LoginView.swift in Sources */,
+				635719732EB1E5D900BEA051 /* FlightZoneLayerSelector.swift in Sources */,
+				635719742EB1E5D900BEA051 /* VWorldZoneDetailView.swift in Sources */,
+				63BB7B2C2E3FABC50009A3B7 /* RealtimeSyncManager.swift in Sources */,
+				63C942852E8E375400A27FBB /* AnalyticsDataGenerator.swift in Sources */,
+				634E3FC22E2E96D000C60E43 /* AppleLoginManager.swift in Sources */,
+				63FFAA0100000000000A0002 /* GoogleLoginManager.swift in Sources */,
+				63970D5E2DE9C93400E11238 /* NaverGeocodingService.swift in Sources */,
+				63970D612DE9C93400E11238 /* ShapeUserDefaultsStore.swift in Sources */,
+				63BB7B2E2E3FBAC50009A3B7 /* ShapeRealtimeObserver.swift in Sources */,
+				63BD52E22E3095540048B7EB /* SavedTableListView.swift in Sources */,
+				6337C4CF2DF98ECA00089659 /* ShapeDetailView.swift in Sources */,
+				63CEF21F2EE7EBAB007ED69B /* SketchSmoothingAlgorithm.swift in Sources */,
+				63A9CA982E9E8C69009C437A /* WeatherInfoView.swift in Sources */,
+				6362E56E2E2FD2B600402B39 /* CoordinateViewModel.swift in Sources */,
+				63970D682DE9C93400E11238 /* ShapeFileStore.swift in Sources */,
+				63A9CA922E9E5652009C437A /* KPInfoView.swift in Sources */,
+				633F13AA2DF8340400BBDD38 /* MainView.swift in Sources */,
+				63BD52E02E30948B0048B7EB /* NaverMapView.swift in Sources */,
+				63970D692DE9C93400E11238 /* ShapeSelectionCoordinator.swift in Sources */,
+				633F13D12DF89AF500BBDD38 /* ColorPickerView.swift in Sources */,
+				633F13CD2DF888CD00BBDD38 /* DronePassApp.swift in Sources */,
+				63970D6A2DE9C93400E11238 /* NotiName.swift in Sources */,
+				63BFDE0A2E3618FD0044F1BA /* MigrationManager.swift in Sources */,
+				630384CB2E02C716007684D1 /* CoordinateView.swift in Sources */,
+				631894412E31021100BD7856 /* FetchWebDocuments.swift in Sources */,
+				63BFDE042E34E3730044F1BA /* AuthManager.swift in Sources */,
+				631894502E3102FC00BD7856 /* MarkdownView.swift in Sources */,
+				63C9427F2E8B892300A27FBB /* DroneFirebaseStore.swift in Sources */,
+				6333963E2E8EBF6C005C4694 /* KeychainHelper.swift in Sources */,
+				63C942802E8B892300A27FBB /* DroneRepository.swift in Sources */,
+				633F13CB2DF885DB00BBDD38 /* MainTabView.swift in Sources */,
+				C5EE34748425C12741FB0FE1 /* KPIndexModel.swift in Sources */,
+				A28D174C7B51CAC35761E9ED /* KPIndexManager.swift in Sources */,
+				DA126B2C82CE2E87FF33FEB7 /* KPForecastView.swift in Sources */,
+				8B917210305DA4B367230D9C /* SketchModel.swift in Sources */,
+				F0BB8E5260E6285DD88B4A13 /* SketchFileStore.swift in Sources */,
+				CC0E8C71F0A8789A6B09B6A2 /* SketchFirebaseStore.swift in Sources */,
+				9B0D89C1DCCF480392D5D2AC /* SketchRepository.swift in Sources */,
+				D0F27DCD89D9D2B8A5D72B52 /* SketchToolbarView.swift in Sources */,
+				06A603BC5A150B005620D169 /* SketchCanvasView.swift in Sources */,
+				E04384E1D9C10F1996221CAB /* SketchManager.swift in Sources */,
+				63CEF2202EE80000007ED69B /* SketchPointsCache.swift in Sources */,
+				63CEF2222EE80001007ED69B /* DistanceCalculator.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		63DAB0032F00000100000003 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		63DAB0072F00000100000007 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 63C057412DD2F6530044CF9B /* DronePass */;
+			targetProxy = 63A1A4BE30432292008BA7EF /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		637944702EB9BF23007D39F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				6379446F2EB9BF23007D39F4 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		637944732EB9BF23007D39F4 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				637944722EB9BF23007D39F4 /* ko */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		63C0576F2DD2F6540044CF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DronePass/DronePass.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 101;
+				DEVELOPMENT_TEAM = LRMVZ8GHUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DronePass/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DronePass;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치의 일출/일몰 시간을 계산하고 드론 비행 구역을 지도에 표시하기 위해 위치 정보가 필요합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.5.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ScienceFiction.DronePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		63C057702DD2F6540044CF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_ENTITLEMENTS = DronePass/DronePass.entitlements;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 101;
+				DEVELOPMENT_TEAM = LRMVZ8GHUX;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = DronePass/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = DronePass;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.business";
+				INFOPLIST_KEY_NSLocationWhenInUseUsageDescription = "현재 위치의 일출/일몰 시간을 계산하고 드론 비행 구역을 지도에 표시하기 위해 위치 정보가 필요합니다.";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UIStatusBarHidden = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				INFOPLIST_KEY_UIUserInterfaceStyle = Light;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 3.5.4;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ScienceFiction.DronePass;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		63C057712DD2F6540044CF9B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639454C22EDFF970000BD29A /* Debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = 4823B5JB69;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		63C057722DD2F6540044CF9B /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 639454C32EDFF970000BD29A /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = 4823B5JB69;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.4;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		63DAB0082F00000100000008 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ScienceFiction.DronePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DronePass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DronePass";
+			};
+			name = Debug;
+		};
+		63DAB0092F00000100000009 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.ScienceFiction.DronePassTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/DronePass.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/DronePass";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		63C0573D2DD2F6530044CF9B /* Build configuration list for PBXProject "DronePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C057712DD2F6540044CF9B /* Debug */,
+				63C057722DD2F6540044CF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63C0576E2DD2F6540044CF9B /* Build configuration list for PBXNativeTarget "DronePass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63C0576F2DD2F6540044CF9B /* Debug */,
+				63C057702DD2F6540044CF9B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		63DAB00A2F0000010000000A /* Build configuration list for PBXNativeTarget "DronePassTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				63DAB0082F00000100000008 /* Debug */,
+				63DAB0092F00000100000009 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		630726642FD586FA000C9608 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/google/GoogleSignIn-iOS";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 9.1.0;
+			};
+		};
+		631AB3592DD389FC005AA749 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/navermaps/SPM-NMapsMap";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.21.0;
+			};
+		};
+		634E3FB72E2E7E5600C60E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/firebase/firebase-ios-sdk";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 12.0.0;
+			};
+		};
+		63C8059F2DE30D1E00F3428B /* XCRemoteSwiftPackageReference "Solar" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ceeK/Solar.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.0.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		630726652FD586FA000C9608 /* GoogleSignIn */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 630726642FD586FA000C9608 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignIn;
+		};
+		630726672FD586FA000C9608 /* GoogleSignInSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 630726642FD586FA000C9608 /* XCRemoteSwiftPackageReference "GoogleSignIn-iOS" */;
+			productName = GoogleSignInSwift;
+		};
+		631AB35A2DD389FC005AA749 /* NMapsMap */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 631AB3592DD389FC005AA749 /* XCRemoteSwiftPackageReference "SPM-NMapsMap" */;
+			productName = NMapsMap;
+		};
+		634E3FB82E2E7E5600C60E43 /* FirebaseAnalytics */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634E3FB72E2E7E5600C60E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAnalytics;
+		};
+		634E3FBA2E2E7E5600C60E43 /* FirebaseAuth */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634E3FB72E2E7E5600C60E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseAuth;
+		};
+		634E3FBC2E2E7E5600C60E43 /* FirebaseFirestore */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634E3FB72E2E7E5600C60E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseFirestore;
+		};
+		634E3FBE2E2E7E5600C60E43 /* FirebaseStorage */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634E3FB72E2E7E5600C60E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseStorage;
+		};
+		63C2429A2EC59425007FFD85 /* FirebaseMessaging */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 634E3FB72E2E7E5600C60E43 /* XCRemoteSwiftPackageReference "firebase-ios-sdk" */;
+			productName = FirebaseMessaging;
+		};
+		63C805A02DE30E9000F3428B /* Solar */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 63C8059F2DE30D1E00F3428B /* XCRemoteSwiftPackageReference "Solar" */;
+			productName = Solar;
+		};
+/* End XCSwiftPackageProductDependency section */
+	};
+	rootObject = 63C0573A2DD2F6530044CF9B /* Project object */;
+}

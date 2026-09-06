@@ -1,0 +1,183 @@
+/*
+  Localizable.strings (English)
+  DronePass
+*/
+
+// MARK: - Shape Edit
+"shape.edit.title" = "Title";
+"shape.edit.title.placeholder" = "Enter title";
+"shape.edit.coordinate" = "Coordinates";
+"shape.edit.coordinate.placeholder" = "Enter coordinates";
+"shape.edit.address" = "Address";
+"shape.edit.address.placeholder" = "Search address";
+"shape.edit.radius" = "Radius (m)";
+"shape.edit.radius.placeholder" = "Enter radius";
+"shape.edit.altitude" = "Altitude (m)";
+"shape.edit.altitude.placeholder" = "Enter altitude";
+"shape.edit.memo" = "Memo";
+"shape.edit.memo.placeholder" = "Enter memo";
+"shape.edit.startDate" = "Start Date";
+"shape.edit.startDate.select" = "Select Start Date";
+"shape.edit.endDate" = "End Date";
+"shape.edit.endDate.select" = "Select End Date";
+"shape.edit.dayMode" = "Day mode";
+"shape.edit.drone" = "Select Drone";
+"shape.edit.drone.placeholder" = "Select drone";
+"shape.edit.defaultTitle" = "New Shape";
+
+// MARK: - Shape Detail
+"shape.detail.navigation.title" = "Details";
+"shape.detail.edit" = "Edit";
+"shape.detail.duplicate" = "Duplicate";
+"shape.detail.drone" = "Drone";
+"shape.detail.drone.deleted" = "Deleted drone";
+"shape.detail.drone.unassigned" = "No drone assigned";
+"shape.detail.title" = "Title";
+"shape.detail.coordinate" = "Coordinates";
+"shape.detail.address" = "Address";
+"shape.detail.radius" = "Radius";
+"shape.detail.altitude" = "Altitude";
+"shape.detail.startDate" = "Start Date";
+"shape.detail.endDate" = "End Date";
+"shape.detail.memo" = "Memo";
+"shape.detail.deleteAlert.title" = "Delete Shape";
+"shape.detail.map.google" = "Google Maps";
+"shape.detail.map.naver" = "Naver Map";
+"shape.detail.map.kakao" = "Kakao Map";
+"shape.detail.map.tmap" = "TMAP";
+
+// MARK: - Shape Type
+"shape.type.circle" = "Circle";
+"shape.type.rectangle" = "Rectangle";
+"shape.type.polygon" = "Polygon";
+"shape.type.polyline" = "Line";
+
+// MARK: - Sketch
+"sketch.alert.deleteAll.title" = "Delete All Sketches";
+"sketch.alert.deleteAll.message" = "Are you sure you want to delete all %lld sketches?";
+"sketch.button.done" = "Done";
+"sketch.error.dataCorruption" = "Sketch data is corrupted.";
+"sketch.error.fileNotFound" = "Sketch file not found.";
+"sketch.error.encodingError" = "Failed to encode sketch.";
+"sketch.error.decodingError" = "Failed to decode sketch.";
+"sketch.error.saveFailed" = "Failed to save sketch: %@";
+"sketch.error.notAuthenticated" = "User is not authenticated.";
+"sketch.error.invalidData" = "Invalid sketch data format.";
+"sketch.error.unknownError" = "An unknown error occurred.";
+
+// MARK: - Common
+"common.search" = "Search";
+"common.cancel" = "Cancel";
+"common.confirm" = "OK";
+"common.close" = "Close";
+"common.yes" = "Yes";
+"common.no" = "No";
+"common.done" = "Done";
+"common.savedItems" = "Saved Items";
+
+// MARK: - Address Search
+"address.search.title" = "Search Address";
+"address.search.placeholder" = "Search by road or lot address";
+"address.search.guide" = "Both road and lot addresses are searchable";
+"address.search.example" = "Search examples:";
+"address.type.jibun" = "Lot";
+"address.type.road" = "Road";
+
+// MARK: - Coordinate Input
+"coordinate.title" = "Enter Coordinates";
+"coordinate.guide" = "Enter flight coordinates in one of the supported formats";
+"coordinate.format.title" = "Supported formats:";
+"coordinate.alert.addressNotFound.title" = "Address Not Found";
+"coordinate.alert.addressNotFound.message" = "Address not found. Continue with coordinates?\n(Navigation will use coordinates)";
+"coordinate.alert.addressNotFound.fallback" = "Address not found";
+
+// MARK: - Shape Edit Navigation
+"shape.edit.navigation.cancel" = "Cancel";
+"shape.edit.navigation.save" = "Save";
+"shape.edit.alert.unsaved.title" = "Unsaved Changes";
+"shape.edit.alert.unsaved.message" = "All changes will be lost. Close anyway?";
+"shape.edit.alert.error.title" = "Input Error";
+"shape.edit.error.coordinateRequired" = "Please enter coordinates or address!";
+"shape.edit.error.radiusRequired" = "Please enter radius!";
+"shape.edit.error.noAddress" = "No address found for this location";
+"shape.edit.error.noCoordinate" = "Coordinates not set.";
+
+// MARK: - Sync
+"sync.alert.detected.title" = "Changes Detected";
+"sync.alert.detected.message" = "Changes detected from another device.\nUpdating shape data.";
+"sync.loading.title" = "Syncing...";
+"sync.loading.message" = "Fetching latest data.";
+"sync.complete.title" = "Sync Complete";
+"sync.complete.message" = "Shape data has been updated.";
+"sync.error.title" = "Sync Failed";
+"sync.error.message" = "Failed to fetch changes.\n%@";
+
+// MARK: - Drone Management
+"drone.list.title" = "Manage My Drones";
+"drone.list.section.my" = "My Drones";
+"drone.list.section.usage" = "How to Use";
+"drone.list.empty" = "No drones registered.";
+"drone.list.addNew" = "Add New Drone";
+"drone.list.usage.colorCustomization" = "• Each drone can have a unique color";
+"drone.list.usage.lastDrone" = "• Cannot delete the last remaining drone";
+"drone.select.title" = "Select Drone";
+"drone.select.moveShape" = "Select drone to move shape";
+"drone.select.confirm" = "Confirm";
+
+// MARK: - Drone Edit
+"drone.edit.cancel" = "Cancel";
+"drone.edit.name.placeholder" = "Drone name";
+"drone.edit.section.basic" = "Basic Information";
+"drone.edit.section.basic.footer" = "Please keep it within one line";
+"drone.edit.serial.placeholder" = "Enter serial number (optional)";
+"drone.edit.section.serial" = "Serial Number";
+"drone.edit.section.serial.footer" = "Enter your drone's manufacturing or serial number";
+"drone.edit.weight.placeholder" = "e.g., 249g";
+"drone.edit.size.placeholder" = "e.g., 140×140×55mm";
+"drone.edit.section.specs" = "Specifications";
+"drone.edit.section.specs.footer" = "Enter drone's takeoff weight and size";
+"drone.edit.section.memo" = "Memo";
+"drone.edit.section.memo.footer" = "Write notes about your drone freely";
+"drone.edit.title.add" = "Add New Drone";
+"drone.edit.title.edit" = "Edit Drone";
+"drone.edit.add" = "Add";
+"drone.edit.save" = "Save";
+"drone.edit.defaultName" = "Drone %d";
+"drone.edit.alert.saveFailed" = "Save Failed";
+"drone.edit.alert.nameRequired" = "Please enter a drone name.";
+"drone.edit.alert.nameDuplicate" = "This drone name already exists.";
+
+// MARK: - Drone Detail
+"drone.detail.title" = "Drone Details";
+"drone.detail.name" = "Drone Name";
+"drone.detail.color" = "Color";
+"drone.detail.serial" = "Serial Number";
+"drone.detail.serial.empty" = "Not entered";
+"drone.detail.section.basic" = "Basic Info";
+"drone.detail.weight" = "Takeoff Weight";
+"drone.detail.size" = "Size";
+"drone.detail.section.specs" = "Specifications";
+"drone.detail.memo.empty" = "No memo";
+"drone.detail.section.memo" = "Memo";
+"drone.detail.edit" = "Edit";
+"drone.detail.delete" = "Delete";
+"drone.detail.shapeHandling.title" = "Handle Connected Shapes";
+"drone.detail.shapeHandling.moveToOther" = "Move to another drone (%d)";
+"drone.detail.shapeHandling.deleteAll" = "Delete shapes too (%d)";
+"drone.detail.shapeHandling.message" = "How would you like to handle %d shapes connected to '%@'?";
+"drone.detail.deleteAlert.title" = "Delete Drone";
+"drone.detail.deleteAlert.message" = "Are you sure you want to delete '%@'?";
+
+// MARK: - Flight Zone
+"flightzone.name.unknown" = "Unknown";
+"flightzone.allowed" = "Flight is allowed in this area.";
+"flightzone.advisory" = "Flight allowed but caution required.";
+"flightzone.prohibited" = "%@ zone. Flight is prohibited.";
+"flightzone.restricted" = "%@ zone. Flight approval required.";
+
+// MARK: - Settings
+"settings.koreaFeatures.toggle" = "Local Features (Korea)";
+"settings.koreaFeatures.alert.on.title" = "Korea Local Features Enabled";
+"settings.koreaFeatures.alert.on.message" = "Local features for Korea enabled. (Flight zones, etc.)";
+"settings.koreaFeatures.alert.off.title" = "Korea Local Features Disabled";
+"settings.koreaFeatures.alert.off.message" = "Local features for Korea disabled.";

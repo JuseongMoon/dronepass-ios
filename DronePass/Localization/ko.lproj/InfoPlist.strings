@@ -1,0 +1,2 @@
+/* Location Permission */
+"NSLocationWhenInUseUsageDescription" = "현재 위치의 일출/일몰 시간을 계산하고 위치 기반 날씨 정보를 제공하기 위해 위치 정보가 필요합니다.";

@@ -1,0 +1,16 @@
+{
+  "documentId": "2B3C4D5E-6F7A-4B8C-9D0E-1F2A3B4C5D6E",
+  "fields": {
+    "id": "2B3C4D5E-6F7A-4B8C-9D0E-1F2A3B4C5D6E",
+    "title": "김포 촬영 구역",
+    "shapeType": "rectangle",
+    "baseCoordinate": { "latitude": 37.615321, "longitude": 126.715654 },
+    "secondCoordinate": { "latitude": 37.610111, "longitude": 126.722222 },
+    "memo": "",
+    "address": "",
+    "createdAt": { "_seconds": 1782864000, "_nanoseconds": 0 },
+    "flightStartDate": { "_seconds": 1782900000, "_nanoseconds": 0 },
+    "color": "#FF3B30",
+    "updatedAt": { "_seconds": 1782907200, "_nanoseconds": 0 }
+  }
+}

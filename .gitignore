@@ -1,0 +1,15 @@
+# Xcode 빌드 산출물 무시
+/build/
+/DerivedData/
+/*.xcarchive
+*.dia
+
+# API 키 및 시크릿 파일
+**/Secrets.xcconfig
+
+# Xcode 사용자별 설정
+xcuserdata/
+*.xcuserstate
+
+# macOS
+.DS_Store

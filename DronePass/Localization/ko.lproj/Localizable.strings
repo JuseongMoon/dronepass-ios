@@ -1,0 +1,183 @@
+/*
+  Localizable.strings (Korean)
+  DronePass
+*/
+
+// MARK: - Shape Edit
+"shape.edit.title" = "제목";
+"shape.edit.title.placeholder" = "제목 입력";
+"shape.edit.coordinate" = "좌표";
+"shape.edit.coordinate.placeholder" = "좌표 입력";
+"shape.edit.address" = "주소";
+"shape.edit.address.placeholder" = "주소 검색";
+"shape.edit.radius" = "반경 (m)";
+"shape.edit.radius.placeholder" = "반경 입력";
+"shape.edit.altitude" = "고도 (m)";
+"shape.edit.altitude.placeholder" = "고도 입력";
+"shape.edit.memo" = "메모";
+"shape.edit.memo.placeholder" = "메모 입력";
+"shape.edit.startDate" = "시작일";
+"shape.edit.startDate.select" = "시작일 선택";
+"shape.edit.endDate" = "종료일";
+"shape.edit.endDate.select" = "종료일 선택";
+"shape.edit.dayMode" = "날짜만 표시";
+"shape.edit.drone" = "드론 선택";
+"shape.edit.drone.placeholder" = "드론 선택";
+"shape.edit.defaultTitle" = "새 도형";
+
+// MARK: - Shape Detail
+"shape.detail.navigation.title" = "상세정보";
+"shape.detail.edit" = "편집";
+"shape.detail.duplicate" = "복제";
+"shape.detail.drone" = "드론";
+"shape.detail.drone.deleted" = "삭제된 드론";
+"shape.detail.drone.unassigned" = "드론 미지정";
+"shape.detail.title" = "제목";
+"shape.detail.coordinate" = "좌표";
+"shape.detail.address" = "주소";
+"shape.detail.radius" = "반경";
+"shape.detail.altitude" = "고도";
+"shape.detail.startDate" = "시작일";
+"shape.detail.endDate" = "종료일";
+"shape.detail.memo" = "메모";
+"shape.detail.deleteAlert.title" = "도형 삭제";
+"shape.detail.map.google" = "구글 지도";
+"shape.detail.map.naver" = "네이버 지도";
+"shape.detail.map.kakao" = "카카오맵";
+"shape.detail.map.tmap" = "티맵";
+
+// MARK: - Shape Type
+"shape.type.circle" = "원";
+"shape.type.rectangle" = "사각형";
+"shape.type.polygon" = "다각형";
+"shape.type.polyline" = "선";
+
+// MARK: - Sketch
+"sketch.alert.deleteAll.title" = "모든 스케치 삭제";
+"sketch.alert.deleteAll.message" = "%lld개의 스케치를 모두 삭제하시겠습니까?";
+"sketch.button.done" = "완료";
+"sketch.error.dataCorruption" = "스케치 데이터가 손상되었습니다.";
+"sketch.error.fileNotFound" = "스케치 파일을 찾을 수 없습니다.";
+"sketch.error.encodingError" = "스케치 인코딩에 실패했습니다.";
+"sketch.error.decodingError" = "스케치 디코딩에 실패했습니다.";
+"sketch.error.saveFailed" = "스케치 저장 실패: %@";
+"sketch.error.notAuthenticated" = "사용자가 인증되지 않았습니다.";
+"sketch.error.invalidData" = "잘못된 스케치 데이터 형식입니다.";
+"sketch.error.unknownError" = "알 수 없는 오류가 발생했습니다.";
+
+// MARK: - Common
+"common.search" = "검색";
+"common.cancel" = "취소";
+"common.confirm" = "확인";
+"common.close" = "닫기";
+"common.yes" = "예";
+"common.no" = "아니요";
+"common.done" = "선택 완료";
+"common.savedItems" = "저장된 항목";
+
+// MARK: - Address Search
+"address.search.title" = "주소 검색";
+"address.search.placeholder" = "도로명 또는 지번 주소로 검색";
+"address.search.guide" = "도로명 주소와 지번 주소 모두 검색 가능합니다";
+"address.search.example" = "검색 예시:";
+"address.type.jibun" = "지번";
+"address.type.road" = "도로명";
+
+// MARK: - Coordinate Input
+"coordinate.title" = "좌표 입력";
+"coordinate.guide" = "드론원스탑에서 승인받은 좌표를 복사&붙여넣기 하세요";
+"coordinate.format.title" = "지원하는 좌표 형식:";
+"coordinate.alert.addressNotFound.title" = "주소 검색 실패";
+"coordinate.alert.addressNotFound.message" = "주소가 검색되지 않습니다. 이대로 좌표를 입력할까요?\n(길찾기는 좌표를 기반으로 진행됩니다)";
+"coordinate.alert.addressNotFound.fallback" = "주소를 찾을 수 없습니다";
+
+// MARK: - Shape Edit Navigation
+"shape.edit.navigation.cancel" = "취소";
+"shape.edit.navigation.save" = "저장";
+"shape.edit.alert.unsaved.title" = "수정 중인 정보가 있습니다";
+"shape.edit.alert.unsaved.message" = "수정 중인 내용이 모두 사라집니다. 닫으시겠습니까?";
+"shape.edit.alert.error.title" = "입력 오류";
+"shape.edit.error.coordinateRequired" = "좌표나 주소를 반드시 입력해주세요!";
+"shape.edit.error.radiusRequired" = "반경을 반드시 입력해주세요!";
+"shape.edit.error.noAddress" = "해당 위치의 주소가 존재하지 않습니다";
+"shape.edit.error.noCoordinate" = "좌표가 설정되지 않았습니다.";
+
+// MARK: - Sync
+"sync.alert.detected.title" = "변경사항 감지";
+"sync.alert.detected.message" = "다른 기기에서 변경사항이 감지되었습니다.\n도형 정보를 최신화합니다.";
+"sync.loading.title" = "동기화 중...";
+"sync.loading.message" = "최신 데이터를 가져오는 중입니다.";
+"sync.complete.title" = "동기화 완료";
+"sync.complete.message" = "도형 정보가 최신화되었습니다.";
+"sync.error.title" = "동기화 실패";
+"sync.error.message" = "변경사항을 가져오는 중 오류가 발생했습니다.\n%@";
+
+// MARK: - Drone Management
+"drone.list.title" = "내 드론 관리하기";
+"drone.list.section.my" = "내 드론";
+"drone.list.section.usage" = "사용법";
+"drone.list.empty" = "등록된 드론이 없습니다.";
+"drone.list.addNew" = "새 드론 추가";
+"drone.list.usage.colorCustomization" = "• 각 드론마다 고유한 색상을 지정할 수 있습니다";
+"drone.list.usage.lastDrone" = "• 마지막 남은 드론은 삭제할 수 없습니다";
+"drone.select.title" = "드론 선택";
+"drone.select.moveShape" = "도형을 이동할 드론 선택";
+"drone.select.confirm" = "확인";
+
+// MARK: - Drone Edit
+"drone.edit.cancel" = "취소";
+"drone.edit.name.placeholder" = "드론 이름";
+"drone.edit.section.basic" = "기본 정보";
+"drone.edit.section.basic.footer" = "한 줄 이내로 입력해주세요";
+"drone.edit.serial.placeholder" = "시리얼 번호 입력 (선택)";
+"drone.edit.section.serial" = "시리얼 번호";
+"drone.edit.section.serial.footer" = "드론의 제조번호 또는 시리얼 번호를 입력하세요";
+"drone.edit.weight.placeholder" = "예: 249g";
+"drone.edit.size.placeholder" = "예: 140×140×55mm";
+"drone.edit.section.specs" = "사양";
+"drone.edit.section.specs.footer" = "드론의 이륙 중량과 크기를 입력하세요";
+"drone.edit.section.memo" = "메모";
+"drone.edit.section.memo.footer" = "드론에 대한 메모를 자유롭게 작성하세요";
+"drone.edit.title.add" = "새 드론 추가";
+"drone.edit.title.edit" = "드론 편집";
+"drone.edit.add" = "추가";
+"drone.edit.save" = "저장";
+"drone.edit.defaultName" = "드론 %d";
+"drone.edit.alert.saveFailed" = "저장 실패";
+"drone.edit.alert.nameRequired" = "드론 이름을 입력해주세요.";
+"drone.edit.alert.nameDuplicate" = "이미 사용 중인 드론 이름입니다.";
+
+// MARK: - Drone Detail
+"drone.detail.title" = "드론 상세";
+"drone.detail.name" = "드론 이름";
+"drone.detail.color" = "색상";
+"drone.detail.serial" = "시리얼 번호";
+"drone.detail.serial.empty" = "미입력";
+"drone.detail.section.basic" = "기본 정보";
+"drone.detail.weight" = "이륙 중량";
+"drone.detail.size" = "크기";
+"drone.detail.section.specs" = "사양";
+"drone.detail.memo.empty" = "메모 없음";
+"drone.detail.section.memo" = "메모";
+"drone.detail.edit" = "편집";
+"drone.detail.delete" = "삭제";
+"drone.detail.shapeHandling.title" = "연결된 도형 처리";
+"drone.detail.shapeHandling.moveToOther" = "다른 드론으로 이동 (%d개)";
+"drone.detail.shapeHandling.deleteAll" = "도형도 함께 삭제 (%d개)";
+"drone.detail.shapeHandling.message" = "'%2$@'에 연결된 %1$d개의 도형을 어떻게 처리할까요?";
+"drone.detail.deleteAlert.title" = "드론 삭제";
+"drone.detail.deleteAlert.message" = "'%@'을(를) 삭제하시겠습니까?";
+
+// MARK: - Flight Zone
+"flightzone.name.unknown" = "이름 없음";
+"flightzone.allowed" = "해당 지역은 비행 가능합니다.";
+"flightzone.advisory" = "비행 가능하나 주의가 필요한 지역입니다.";
+"flightzone.prohibited" = "%@ 구역입니다. 비행이 금지되어 있습니다.";
+"flightzone.restricted" = "%@ 구역입니다. 비행 승인이 필요합니다.";
+
+// MARK: - Settings
+"settings.koreaFeatures.toggle" = "한국 현지 기능";
+"settings.koreaFeatures.alert.on.title" = "한국 현지 기능 활성화";
+"settings.koreaFeatures.alert.on.message" = "한국 현지 기능이 활성화됩니다. (비행구역 정보 등)";
+"settings.koreaFeatures.alert.off.title" = "한국 현지 기능 비활성화";
+"settings.koreaFeatures.alert.off.message" = "한국 현지 기능이 비활성화됩니다.";

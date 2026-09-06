@@ -1,0 +1,17 @@
+{
+  "documentId": "6F7A8B9C-0D1E-4F2A-93B4-C5D6E7F80912",
+  "fields": {
+    "id": "6F7A8B9C-0D1E-4F2A-93B4-C5D6E7F80912",
+    "title": "Android 작성 활성 도형",
+    "shapeType": "circle",
+    "baseCoordinate": { "latitude": 37.123456, "longitude": 127.654321 },
+    "radius": 200,
+    "height": 100,
+    "memo": "",
+    "address": "",
+    "createdAt": { "_seconds": 1782864000, "_nanoseconds": 0 },
+    "flightStartDate": { "_seconds": 1782900000, "_nanoseconds": 0 },
+    "color": "#5856D6",
+    "updatedAt": { "_seconds": 1782907200, "_nanoseconds": 0 }
+  }
+}

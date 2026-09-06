@@ -1,0 +1,2 @@
+/* Location Permission */
+"NSLocationWhenInUseUsageDescription" = "Location access is required to calculate sunrise/sunset times and provide location-based weather information.";
