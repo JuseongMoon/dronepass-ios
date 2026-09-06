@@ -1,120 +1,80 @@
 ---
-description: 
-globs: 
-alwaysApply: false
+description: DronePass iOS 저장소의 구조·기술 스택·작업 규칙
+globs: ["**/*.swift", "DronePass.xcodeproj/**", "team/**"]
+alwaysApply: true
 ---
-You are an expert iOS developer using Swift and SwiftUI. Follow these guidelines:
 
-  # Code Structure
-  - Use Swift's latest features and protocol-oriented programming
-  - Prefer value types (structs) over classes
-  - Use MVVM architecture with SwiftUI
-  - Structure: Features/, Core/, UI/, Resources/
-  - Follow Apple's Human Interface Guidelines
+# DronePass iOS
 
-  # Naming
+드론 비행 허가지 시각화 및 지도 메모 앱. Swift + SwiftUI, 네이버 지도 + Firebase.
+앱 타깃 배포 대상은 **iOS 17.6+**, 언어 모드는 **Swift 5.0**(`SWIFT_VERSION = 5.0`)입니다.
 
-  - camelCase for vars/funcs, PascalCase for types
-  - Verbs for methods (fetchData)
-  - Boolean: use is/has/should prefixes
-  - Clear, descriptive names following Apple style
+## 실제 디렉터리 구조
 
-  # Swift Best Practices
+`DronePass/` 아래는 기능 단위로 나뉘어 있습니다. `Features/`나 `UI/` 같은 폴더는 없습니다.
 
-  - Strong type system, proper optionals
-  - async/await for concurrency
-  - Result type for errors
-  - @Published, @StateObject for state
-  - Prefer let over var
-  - Protocol extensions for shared code
+- `Core/` — `NaverMapView`(UIViewRepresentable 래퍼), 네이버 지오코딩, `ShapeSelectionCoordinator`
+- `VWorld/` — 공역 레이어 API, 오버레이 관리, 교차 판정
+- `Shape/` — 도형 모델·저장소·목록·상세·편집 UI
+- `Sketch/` — 지도 스케치 캔버스·툴바·저장소
+- `Firebase/` — Firestore 저장소와 리포지토리
+- `Manager/` — 인증(`AuthManager`, `KeychainHelper`), 위치, 날씨, KP 지수, 실시간 동기화(`RealtimeSyncManager`, `ShapeRealtimeObserver`, `ChangeDetectionManager`), 마이그레이션
+- `Model/`, `Modifier/`, `Extension/`, `View/`, `Login/`, `Setting/`, `Web/`, `Analytics/`
+- `Localization/` — `Localizable.xcstrings`, `ko.lproj` / `en.lproj`
+- `Config/` — `Secrets.xcconfig.example` (실제 `Secrets.xcconfig`는 gitignore)
 
-  # UI Development
+## 아키텍처
 
-  - SwiftUI first, UIKit when needed
-  - SF Symbols for icons
-  - Support dark mode, dynamic type
-  - SafeArea and GeometryReader for layout
-  - Handle all screen sizes and orientations
-  - Implement proper keyboard handling
+- MVVM + Services. 저장소는 `ShapeStoreProtocol`로 추상화되어
+  `ShapeUserDefaultsStore`(레거시) → `ShapeFileStore` → `ShapeFirebaseStore` 순으로 교체되어 왔습니다.
+  저장 방식을 바꿀 때 상위 레이어를 건드리지 말고 이 프로토콜 뒤에서 처리합니다.
+- 상태: 대부분 `ObservableObject` + `@Published` + `@StateObject`.
+  `AuthManager`·`PushNotificationManager`는 `@Observable` 매크로를 씁니다. 기존 파일의 방식을 따르세요.
+- 동시성: async/await 우선, 리액티브 조합이 필요한 곳만 Combine.
+- **CoreData는 쓰지 않습니다.** 로컬 영속화는 파일 저장소와 `UserDefaults`(설정값), 원격은 Firestore입니다.
 
-  # Performance
+## UI
 
-  - Profile with Instruments
-  - Lazy load views and images
-  - Optimize network requests
-  - Background task handling
-  - Proper state management
-  - Memory management
+- SwiftUI 우선. `NMapsMap`처럼 UIKit 전용 SDK만 `UIViewRepresentable`로 감쌉니다.
+- 지도 오버레이는 참조 타입이라 SwiftUI 갱신이 오버레이 전체 재생성으로 번지기 쉽습니다.
+  선택 상태는 `ShapeSelectionCoordinator`에 모으고, 뷰 갱신 범위를 좁게 유지하세요.
+- SF Symbols, 다크 모드, Dynamic Type, 세이프에어리어를 지킵니다.
+- 파일은 400줄 근처에서 extension으로 분리하고, 뷰 이름에 기능을 붙입니다(`LoginView`, `WeatherPanelView`).
 
-  # Data & State
+## 데이터 계약 (중요)
 
-  - CoreData for complex models
-  - UserDefaults for preferences
-  - Combine for reactive code
-  - Clean data flow architecture
-  - Proper dependency injection
-  - Handle state restoration
+Firestore 문서 형태는 `team/DATA_CONTRACT.md`에 정의되어 있고, Android 앱이 같은 문서를 읽습니다.
+`ShapeFirebaseStore`의 읽기/쓰기 매핑을 바꾸면 **코드 · `team/DATA_CONTRACT.md` · `team/fixtures/*.json`을
+같은 변경에서 함께 갱신**하고 `DronePassTests/CrossPlatformFirestoreContractTests.swift`를 통과시키세요.
+좌표는 nested map(`{latitude, longitude}`)이며 **GeoPoint는 금지**, 날짜는 전부 `Timestamp`입니다.
 
-  # Security
+## 시크릿
 
-  - Encrypt sensitive data
-  - Use Keychain securely
-  - Certificate pinning
-  - Biometric auth when needed
-  - App Transport Security
-  - Input validation
+- 네이버·VWorld 키는 `Info.plist`에 `$(NAVER_MAP_API_KEY)` 형태의 자리표시자로만 존재하고
+  빌드 설정이 `DronePass/Config/Secrets.xcconfig`(gitignore)에서 치환합니다.
+  **plist나 소스에 키 값을 쓰지 않습니다.**
+- `GoogleService-Info.plist`는 클라이언트 식별자라 저장소에 포함됩니다. 접근 통제는 Firestore·Storage
+  보안 규칙이 담당합니다. Firebase **서비스 계정 키는 저장소에 두지 않습니다.**
+- 인증 토큰은 `KeychainHelper`를 통해 Keychain에 저장합니다.
 
-  # Testing & Quality
+## 의존성
 
-  - XCTest for unit tests
-  - XCUITest for UI tests
-  - Test common user flows
-  - Performance testing
-  - Error scenarios
-  - Accessibility testing
+SPM만 사용합니다: `firebase-ios-sdk`(Analytics, Auth, Firestore, Messaging, Storage),
+`SPM-NMapsMap`, `GoogleSignIn-iOS`, `Solar`(일출·일몰), `MapSketch`.
+Firebase 모듈은 버전을 동일하게 유지하고, 필요한 모듈만 타깃에 추가합니다.
 
-  # Essential Features
+## 테스트
 
-  - Deep linking support
-  - Push notifications
-  - Background tasks
-  - Localization
-  - Error handling
-  - Analytics/logging
+`DronePassTests/`에 위 계약 테스트와 `UserActivityTrackingTests`가 있습니다.
 
-  # Firebase SDK
+```bash
+xcodebuild test -scheme DronePass -destination "platform=iOS Simulator,name=iPhone 16"
+```
 
-  - Install via Swift Package Manager, CocoaPods, or Carthage: specify Firebase version ~> 12.0.0.
-  - Include only required modules (e.g., FirebaseAuth, FirebaseFirestore, FirebaseStorage).
-  - Initialize in SwiftUI App or AppDelegate: call FirebaseApp.configure() before using any Firebase services.
-  - Ensure compatibility with Swift 5.7+ and iOS 13+; update deployment targets accordingly.
-  - Version consistency: maintain the same version across all Firebase libraries to avoid conflicts.
-  - Asynchronous API: wrap Firebase asynchronous callbacks in async/await or use Combine publishers.
-  - Error handling: use Result type or do/catch and log errors with Crashlytics.
-  - Security: review and configure Firestore and Storage security rules; minimize ATS exceptions.
-  - Testing: integrate Firebase Emulator Suite for local development; write unit and integration tests.
-  - Performance: add Firebase Performance Monitoring and custom traces to critical code paths.
-  - Manage GoogleService-Info.plist appropriately: include in target and add URL Types in Info.plist.
-  - CI/CD: cache Firebase SDK artifacts and validate GoogleService-Info.plist via environment variables.
-  - Build Settings: verify excluded architectures and bitcode settings to avoid M1/M2 simulator issues.
+CI 워크플로는 없습니다. 검증은 로컬에서 위 명령과 시뮬레이터 실행으로 합니다.
 
-  # Development Process
+## 기타
 
-  - Use SwiftUI previews
-  - Git branching strategy
-  - Code review process
-  - CI/CD pipeline
-  - Documentation
-  - Unit test coverage
-
-  # App Store Guidelines
-
-  - Privacy descriptions
-  - App capabilities
-  - In-app purchases
-  - Review guidelines
-  - App thinning
-  - Proper signing
-
-  Follow Apple's documentation for detailed implementation guidance.
-  
+- 푸시 알림은 실기기에서만 검증됩니다.
+- VWorld는 레이어마다 좌표계·응답 스키마가 달라 `VWorldModels`에서 정규화한 뒤 처리합니다.
+  호출 제한이 있으니 불필요한 재요청을 만들지 마세요.

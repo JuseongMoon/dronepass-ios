@@ -10,6 +10,14 @@
 - Android 구현: [DronePass_forAndroid](https://github.com/JuseongMoon/DronePass_forAndroid)
 - 개발은 비공개 저장소에서 진행하고, 이 저장소에 공개 시점의 스냅샷을 올립니다
 
+<p>
+  <img src="docs/screenshots/01-airspace.jpg" width="30%" alt="공역 레이어와 구역 상세 정보">
+  <img src="docs/screenshots/02-shapes.jpg" width="30%" alt="저장한 비행 지점 목록">
+  <img src="docs/screenshots/03-flight-info.jpg" width="30%" alt="기상 · 일출일몰 · KP 지수">
+</p>
+
+왼쪽부터 공역 레이어와 구역 상세 정보, 저장한 비행 지점 목록, 기상·일출일몰·KP 지수.
+
 ## 이 앱이 푸는 문제
 
 드론 비행 가능 여부를 확인하려면 원래 국토교통부 공역도, 문화재 보호구역, 국립공원 경계를
@@ -93,8 +101,8 @@ Sign in with Apple · Keychain · VWorld 오픈 API · [Solar](https://github.co
 ## 실행 방법
 
 ```bash
-git clone https://github.com/JuseongMoon/DronePass.git
-cd DronePass
+git clone https://github.com/JuseongMoon/dronepass-ios.git
+cd dronepass-ios
 open DronePass.xcodeproj
 ```
 
@@ -103,7 +111,8 @@ open DronePass.xcodeproj
 1. **네이버 클라우드 플랫폼** — Maps 및 Geocoding 이용 신청 후 Client ID / Secret 발급
 2. **VWorld** — 오픈 API 인증키 발급
 3. **Firebase** — 저장소에 포함된 `GoogleService-Info.plist`는 데모용 프로젝트 설정입니다.
-   본인 Firebase 프로젝트에 iOS 앱을 등록한 뒤 받은 파일로 교체하세요.
+   본인 Firebase 프로젝트에 iOS 앱을 등록한 뒤 받은 파일로 **로컬에서만** 교체하고,
+   교체한 파일은 커밋하지 마세요.
 
 네이버·VWorld 키는 `DronePass/Config/Secrets.xcconfig.example`을
 `DronePass/Config/Secrets.xcconfig`로 복사한 뒤 채웁니다.

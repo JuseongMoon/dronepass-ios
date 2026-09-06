@@ -420,15 +420,15 @@ struct HyperlinkTextView: UIViewRepresentable {
 
 · 인근 촬영금지시설이 촬영될 가능성이 명백한 경우 (업무일 기준)촬영 2일 전까지 연락 후 안내받으시기 바랍니다.
 · 현장통제 보안담당자 : 031-290-9041(연락 가능시간 : 평일 09:00 ~ 17:00 / 그 외 연락불가)
-hisnote@me.com
+demo@example.com
 https://www.naver.com
 · 인근 촬영금지시설이 촬영될 가능성이 명백한 경우 (업무일 기준)촬영 2일 전까지 연락 후 안내받으시기 바랍니다.
 · 현장통제 보안담당자 : 031-290-9041(연락 가능시간 : 평일 09:00 ~ 17:00 / 그 외 연락불가)
-hisnote@me.com
+demo@example.com
 https://www.naver.com
 · 인근 촬영금지시설이 촬영될 가능성이 명백한 경우 (업무일 기준)촬영 2일 전까지 연락 후 안내받으시기 바랍니다.
 · 현장통제 보안담당자 : 031-290-9041(연락 가능시간 : 평일 09:00 ~ 17:00 / 그 외 연락불가)
-hisnote@me.com
+demo@example.com
 https://www.naver.com
 """,
         address: "인천광역시 서구 청라동 1-791",
